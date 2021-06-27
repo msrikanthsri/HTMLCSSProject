@@ -106,6 +106,8 @@ body{
     border-radius: 8px 8px 0px 0px;
 }
 
+
+
 .food__menu__card__description{
     padding: 20px;
 }
@@ -121,7 +123,7 @@ body{
         width: 150px; 
     }
     .button__primary{      
-        padding: 12px 20px;
+        padding: 10px 16px;
         font-size: 25px;
     }
     .hero__text{
@@ -140,6 +142,39 @@ body{
         justify-content: space-between;
         gap:10px
     }
+
+    .explore__menu__list{
+        margin-top: 30px;
+        display: flex;
+        gap:8px;
+    }
+
+    #pizza__card{
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+
+    .explore__menu__container{
+        position: relative;
+    }
+
+    .explore__menu__gradient__bg{
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 50%,
+        #ff512f 100%
+
+    );
+    z-index: -3;
+    transform: skewY(-5deg);
+
+    }
 }
 @media (min-width:1024px) {
     .container{
@@ -155,6 +190,14 @@ body{
     .button__primary{      
         padding: 8px 13px;
         font-size: 20px;
+    }
+
+    .explore__menu__list{
+        gap:20px;
+        padding: 0px 20px;
+    }
+    .explore__menu__text{
+        font-size: 50px;
     }
    
     
