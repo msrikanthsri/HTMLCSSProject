@@ -22,6 +22,7 @@ body{
     padding: 10px;
     border: none;
     border-radius: 6px;
+    cursor:pointer;
 }
 
 
@@ -50,14 +51,50 @@ body{
 .hero__container{
     width:100%;
 }
+
+.hero__description{
+    width: 100%;
+    
+}
 .hero__image__container{
     width: 100%;
+    position: relative;
+}
+.hero__image__bg__pattern{
+    width: 100%;
+    
+}
+.hero__image__shape{
+    width: 100%;
+    position: absolute;
 }
 .hero__image{
+    width: 100%;
+    position: absolute;
+}
+
+
+
+.hero_text{
+    width:100%;
+    font-size: 30px;
+    color:#1d3557;
+    margin:20px 0;
+}
+
+/*Explore menu styles*/
+.food__menu__card{
+    width:100%;
+}
+
+.food__image{
     width: 100%;
 }
 
 @media(min-width:768px){
+    .container{
+        max-width: 730px;
+    }
     .navbar{   
         justify-content: space-between;
         padding: 10px 20px;
@@ -65,11 +102,16 @@ body{
     .navbar__brand{
         width: 150px; 
     }
-    .button__primary{
-        
-        padding: 20px;
+    .button__primary{      
+        padding: 12px 20px;
         font-size: 25px;
     }
+    .hero__text{
+        width:100%;
+        font-size: 30px;
+        margin: 10px 0px;
+    }
+
     .navbar__logo{
         width: 100%;
     }
@@ -83,16 +125,27 @@ body{
 }
 @media (min-width:1024px) {
     .container{
-        max-width: 1050px;
-    }
-    .hero__image__container{
-        width: 500px;
-        height: 500px;
+        max-width: 1150px;
         
     }
     
+    .hero__text{
+        width:100%;
+        font-size: 45px;
+      
+    }
+    .button__primary{      
+        padding: 8px 13px;
+        font-size: 20px;
+    }
+   
+    
 }
 
+
 @media(min-width:1400px){
+    .container{
+        max-width: 1300px;
+    }
     
 }
